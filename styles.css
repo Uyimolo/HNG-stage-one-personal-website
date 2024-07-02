@@ -74,15 +74,13 @@ button:hover {
 }
 
 .text-box {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
   max-width: 1200px;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 0.5rem;
 }
 
@@ -92,33 +90,25 @@ li {
   color: var(--primary);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
 header {
-  background-color: var(--backgroundColor);
+  background-color: rgba(0, 0, 0, 0.527);
   width: 100%;
   max-width: 1600px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px) grayscale();
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   z-index: 1;
-  /* border-bottom: 1px solid black; */
 }
 
 .logo {
@@ -167,7 +157,6 @@ section {
 }
 
 #goals {
-  /* background-color: var(--orange); */
   padding-top: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -339,6 +328,8 @@ footer a {
 }
 
 @media (min-width: 1440px) {
+  /* use absolute units to stop fonts from growing after 1440px because the page will stop growing at 1600px */
+  /* and i dont want the fonts to keep growing after that */
   h1 {
     font-size: 5em;
   }
