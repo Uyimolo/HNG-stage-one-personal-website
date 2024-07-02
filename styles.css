@@ -11,12 +11,9 @@
 :root {
   --backgroundColor: #000;
   --orange: #f89d4d;
-  --light-blue: #4ec8f5;
   --purple: #c331e0;
   --textColor: #000000;
-  --textColor2: #252525;
   --primary: #f0f0f0;
-  --secondary: #4f46e5;
 }
 
 body {
@@ -141,16 +138,11 @@ section {
   display: grid;
   gap: 3rem;
   padding-top: 6rem;
-  padding-bottom: 0;
   position: relative;
 }
 
 #hero-image {
   max-width: 600px;
-}
-
-.wave {
-  transform: translateY(-0.5rem);
 }
 
 #hero .text {
@@ -282,9 +274,6 @@ footer a {
     max-width: 600px;
   }
 
-  .wave {
-    bottom: -24vw;
-  }
   #hero p {
     font-size: 2vw;
     font-weight: 400;
