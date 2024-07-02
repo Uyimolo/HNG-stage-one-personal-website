@@ -208,17 +208,10 @@ section {
 }
 
 .goals-card-heading {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
   border: 1px solid #999;
   padding: 1rem;
   border-radius: 0.25rem;
   transition: 0.3s;
-}
-
-.goals-card object {
-  width: 3rem;
 }
 
 footer {
@@ -283,6 +276,10 @@ footer a {
   #hero {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  #hero-image {
+    max-width: 600px;
   }
 
   .wave {
